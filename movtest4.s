@@ -1,0 +1,15 @@
+#an example of indirect addressing
+.code32
+.section .data
+values:
+	.int 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60
+.section .text
+.globl main
+main:
+	movl values, %eax
+	movl $values, %edi
+	movl $100, 4(%edi)
+	movl $1, %edi
+	movl values(, %edi, 4), %ebx
+	movl $1, %eax
+	int $0x80
