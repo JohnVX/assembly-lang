@@ -1,5 +1,4 @@
 #cmpstest1.s A simple example of the CMPS instruction
-.code32
 .section .data
 value1:
 	.ascii "Test"
