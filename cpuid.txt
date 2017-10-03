@@ -1,0 +1,1 @@
+the processor vendor ID is 'GenuineIntel'
